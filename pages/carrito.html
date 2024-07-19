@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/carrito.css">
+    <title>Preentrega3 - Santiago Tomás Gutiérrez</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/logo-tg.PNG" alt="imagen-logo">
+        </div>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="../pages/carrito.html" id="enlace-carrito">CARRITO (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+        <a href="../pages/login.html" class="btn"><button>LOGIN</button></a>
+    </header>
+    <main>
+        <section class="productos">
+            <div class="producto-cantidad">
+                <label class="etiqueta" for="cantidad-productos">Cantidad de Productos:</label>
+                <input type="number" id="cantidad-productos" min="1">
+                <button id="agregar-campos">Agregar Precios</button>
+            </div>
+            <div id="precios-container" class="precios-container"></div>
+            <button id="calcular-total">Calcular Total</button>
+            <div id="resultado" class="resultado"></div>
+        </section>
+    </main>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>

@@ -1,11 +1,15 @@
-// carrito.js
 document.getElementById('agregar-campos').addEventListener('click', function() {
     const cantidad = parseInt(document.getElementById('cantidad-productos').value);
     const preciosContainer = document.getElementById('precios-container');
     preciosContainer.innerHTML = ''; // Limpiar campos anteriores
 
     if (isNaN(cantidad) || cantidad < 1) {
-        alert('Por favor, ingrese una cantidad válida.');
+        // Reemplazar alerta estándar con SweetAlert2
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Por favor, ingrese una cantidad válida.',
+        });
         return;
     }
 
@@ -28,6 +32,16 @@ document.getElementById('calcular-total').addEventListener('click', function() {
             total += precio;
         }
     });
+
+    // Mostrar notificación con Toastify
+    Toastify({
+        text: `Total: $${total.toFixed(2)}`,
+        duration: 3000,
+        close: true,
+        gravity: "top", // Posición de la notificación: top or bottom
+        position: "center", // left, center or right
+        backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    }).showToast();
 
     document.getElementById('resultado').textContent = `Total: $${total.toFixed(2)}`;
 });

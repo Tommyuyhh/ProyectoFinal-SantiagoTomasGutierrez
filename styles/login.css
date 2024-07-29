@@ -156,3 +156,21 @@ input[type="submit"]:hover {
     text-align: center;
     z-index: 1000;
 }
+.message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.message.loading {
+    color: #f0f0f0;
+}
+
+.message.success {
+    color: #4caf50;
+}
+
+.message.error {
+    color: #f44336;
+}

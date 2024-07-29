@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>preentrega3-Santiago Tomas Gutierrez</title>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--  Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--  Logo-->
+    <link rel="icon" href="../preentrega-3/images/logo-tg.PNG" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Proyecto Final-Santiago Tomas Gutierrez</title>
 </head>
 <body>
     <header class="header">
@@ -14,7 +21,6 @@
         <nav>
             <ul class="nav-link">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
                 <li><a href="../preentrega-3/pages/nosotros.html">NOSOTROS</a></li>
                 <li><a href="../preentrega-3/pages/carrito.html" id="enlace-carrito">CARRITO (<span id="contador-carrito">0</span>)</a></li>
             </ul>
@@ -23,6 +29,23 @@
     </header>
 
     <main>
+        <main>
+            <!-- Carousel -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../preentrega-3/images/intel-i5.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../preentrega-3/images/pc2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../preentrega-3/images/pc-e3.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
         <div class="grid-container">
             <div class="grid-item">
                 <a href="#"><img src="../preentrega-3/images/pc5.jpg" alt=""></a>
@@ -97,7 +120,7 @@
                 </div>
             </div>
             <div class="grid-item">
-                <a href="#"><img src="../preentrega-3/images/pc-e1.jpg" alt=""></a>
+                <a href="#"><img src="../preentrega-3/images/pc-e2.jpg" alt=""></a>
                 <div class="desc-product">
                     <h2>Producto 10</h2>
                     <p>$980000</p>
@@ -113,34 +136,34 @@
                 </div>
             </div>
             <div class="grid-item">
-                <a href="#"><img src="../preentrega-3/images/pc-e1.jpg" alt=""></a>
+                <a href="#"><img src="../preentrega-3/images/pc-e4.jpg" alt=""></a>
                 <div class="desc-product">
                     <h2>Producto 12</h2>
-                    <p>$99999</p>
+                    <p>$782349</p>
                     <button class="btn">COMPRAR</button>
                 </div>
             </div>
             <div class="grid-item">
-                <a href="#"><img src="../preentrega-3/images/pc-e1.jpg" alt=""></a>
+                <a href="#"><img src="../preentrega-3/images/pc5.jpg" alt=""></a>
                 <div class="desc-product">
                     <h2>Producto 13</h2>
-                    <p>$99999</p>
+                    <p>$670000</p>
                     <button class="btn">COMPRAR</button>
                 </div>
             </div>
             <div class="grid-item">
-                <a href="#"><img src="../preentrega-3/images/pc-e1.jpg" alt=""></a>
+                <a href="#"><img src="../preentrega-3/images/Intel-Core-i9-2.jpg" alt=""></a>
                 <div class="desc-product">
                     <h2>Producto 14</h2>
-                    <p>$99999</p>
+                    <p>$80000</p>
                     <button class="btn">COMPRAR</button>
                 </div>
             </div>
             <div class="grid-item">
-                <a href="#"><img src="../preentrega-3/images/pc-e1.jpg" alt=""></a>
+                <a href="#"><img src="../preentrega-3/images/placa-de-video2.jpg" alt=""></a>
                 <div class="desc-product">
                     <h2>Producto 15</h2>
-                    <p>$99999</p>
+                    <p>$370000</p>
                     <button class="btn">COMPRAR</button>
                 </div>
             </div>
